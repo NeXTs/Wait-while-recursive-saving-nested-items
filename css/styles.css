@@ -1,0 +1,109 @@
+body{
+	font-family: Arial;
+	font-size: 12px;
+}
+ul{
+    list-style-type: none;
+    background: rgba(5,5,5,.1);
+    border-radius: 5px;
+    padding: 5px;
+}
+li{
+    margin: 5px 0px 5px 4px;
+    padding: 5px;
+    border-radius: 5px;
+    background: #fff;
+    position: relative;
+	-webkit-animation: blink 700ms;
+	-moz-animation: blink 700ms;
+	-o-animation: blink 700ms;
+    animation: blink 700ms;
+}
+@-webkit-keyframes blink{
+	0% {background:white;}
+	50% {background:rgb(223, 237, 255);}
+	100% {background:white;}
+}
+@-o-keyframes blink{
+	0% {background:white;}
+	50% {background:rgb(223, 237, 255);}
+	100% {background:white;}
+}
+@-moz-keyframes blink{
+	0% {background:white;}
+	50% {background:rgb(223, 237, 255);}
+	100% {background:white;}
+}
+@keyframes blink{
+	0% {background:white;}
+	50% {background:rgb(223, 237, 255);}
+	100% {background:white;}
+}
+li.editing{
+	background: rgb(253, 255, 210);
+}
+li > div{
+	margin-right: 70px;
+}
+.questions > li{
+    border: 1px dashed rgba(5,5,5,.3);
+}
+.questions > li:not(:last-child) {
+	margin-bottom: 20px;
+}
+.questions li > div + ul{
+ 	margin-top: 5px;
+}
+.container{
+	width: 500px;
+	margin: 30px;
+}
+input[type=text]{
+	width: 100%;
+	padding: 2px 0px 2px 5px;
+	border-radius: 3px;
+	border: 1px solid rgba(5,5,5,.3);
+	outline: none;
+}
+input[type=text]:focus{
+	background: rgb(255, 248, 242);
+	border: 1px solid rgba(255, 112, 0, 0.83);
+	color: rgb(129, 0, 0);
+}
+.text{
+	width: 100%;
+	height: 26px;
+	line-height: 26px;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.save,.edit{
+	border: 1px solid rgba(5,5,5,.3);
+	padding: 3px 10px;
+	cursor: pointer;
+	font-weight: bold;
+	border-radius: 3px;
+	position: absolute;
+	right: 8px;
+	top: 8px;
+}
+.save{
+	background: #fff;
+	color: rgb(18, 179, 70);
+}
+.save:hover{
+	background: rgb(221, 255, 232);
+}
+.save.ignore{
+	background: rgb(255, 137, 137);
+	color: white;
+}
+.edit{
+	background: #fff;
+	color: tomato;
+}
+.edit:hover{
+	background: rgb(255, 222, 216);
+}
