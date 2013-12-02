@@ -1,6 +1,6 @@
 // global app, so you can see what here happening from console
 var app,
-// tree redactor of questions and notes
+// tree editor of questions and notes
 trees = {
     question: {
         1: {
